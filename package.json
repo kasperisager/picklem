@@ -1,0 +1,41 @@
+{
+  "name": "pickles",
+  "version": "0.0.0",
+  "description": "Pickle your DOM and CSS and enjoy them outside the confines of your least favorite browser",
+  "main": "dist/index.js",
+  "repository": "kasperisager/pickles",
+  "author": "Kasper Isager <kasperisager@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "xo && avaron",
+    "prepare": "babel lib -d dist"
+  },
+  "avaron": {
+    "renderer": true,
+    "concurrency": 4,
+    "require": [
+      "babel-register"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "stage-3"
+    ]
+  },
+  "xo": {
+    "space": true,
+    "envs": [
+      "browser"
+    ]
+  },
+  "devDependencies": {
+    "ava": "^0.22.0",
+    "avaron": "^0.0.13",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "fixt": "^1.0.2",
+    "xo": "^0.18.2"
+  }
+}
