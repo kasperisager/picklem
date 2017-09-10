@@ -1,9 +1,9 @@
 {
-  "name": "pickles",
+  "name": "picklem",
   "version": "0.0.0",
   "description": "Pickle your DOM and CSS and enjoy them outside the confines of your least favorite browser",
   "main": "dist/index.js",
-  "repository": "kasperisager/pickles",
+  "repository": "kasperisager/picklem",
   "author": "Kasper Isager <kasperisager@gmail.com>",
   "license": "MIT",
   "scripts": {
