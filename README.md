@@ -48,7 +48,7 @@ Object {
       value: 'Hi!'
     }
   ],
-  styles: [
+  style: [
     {
       name: 'font-family',
       value: 'Helvetica, sans-serif'
