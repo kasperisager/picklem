@@ -12,6 +12,7 @@
   },
   "avaron": {
     "renderer": true,
+    "verbose": true,
     "concurrency": 4,
     "require": [
       "babel-register"
