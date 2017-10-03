@@ -15,31 +15,8 @@ test('returns a serialized version of a DOM node', async t => {
         background-color: blue;
       }
     </style>
-    <div style="color: red"></div>
+    <div style="color: red">Hello world!</div>
     `,
-    body => t.deepEqual(
-      serialize(body.querySelector('div')),
-      {
-        type: 'element',
-        tag: 'div',
-        attributes: [
-          {
-            name: 'style',
-            value: 'color: red'
-          }
-        ],
-        style: [
-          {
-            name: 'background-color',
-            value: 'rgb(0, 0, 255)'
-          },
-          {
-            name: 'font-family',
-            value: 'Arial'
-          }
-        ],
-        children: []
-      }
-    )
+    body => t.snapshot(serialize(body.querySelector('div')))
   );
 });
